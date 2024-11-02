@@ -158,3 +158,68 @@ header {
 .card:hover {
     transform: scale(1.02);
 }
+
+/* Estilos del pie de página */
+footer {
+    background-color: white;
+}
+
+#contacto {
+    max-height: 427px;
+    height: 100%;
+    min-height: 427px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-container {
+    list-style: none;
+}
+
+.contact-container li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.social-container p {
+    font-size: 24px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+
+.sub-footer {
+    background-color: #1f2937;
+    color: white;
+    height: 58px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+}
+
+.sub-footer p {
+    font-size: 14px;
+}
+
+.line {
+    background-color: #f3f8fe;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    #inicio p {
+        max-width: 300px;
+    }
+
+    .sub-footer {
+        justify-content: center;
+    }
+}
