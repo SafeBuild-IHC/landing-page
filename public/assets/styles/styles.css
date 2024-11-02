@@ -90,3 +90,71 @@ header {
 .btn:hover {
     background-color: #1565c0;
 }
+
+/* Estilos de la sección de servicios */
+#servicios {
+    background-color: #e7eff6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4rem 2rem;
+}
+
+.text-container {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+}
+
+.text-container h1 {
+    margin-bottom: 1rem;
+}
+
+.text-container p {
+    font-size: clamp(18px, 2vw, 22px);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff;
+    max-width: 370px;
+    width: 100%;
+    height: 370px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    margin-top: 2rem;
+}
+
+.card h3 {
+    font-size: 26px;
+}
+
+.card p {
+    font-size: 18px;
+    max-width: 270px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
