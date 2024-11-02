@@ -1,0 +1,92 @@
+/* Estilos globales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e7eff6;
+    color: #555555;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    font-size: clamp(35px, 5vw, 49px);
+}
+
+/* Estilos de la sección hero */
+#inicio {
+    background-color: #fff;
+    min-height: 601px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#inicio h1 {
+    max-width: 923px;
+    max-height: 130px;
+    text-align: center;
+}
+
+#inicio p {
+    font-size: clamp(20px, 2vw, 30px);
+    max-height: 30px;
+    margin-bottom: 3rem;
+}
+
+
+/* Estilos del encabezado */
+header {
+    background-color: #fafafa;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+.options a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.options a:hover {
+    color: #1658ae;
+}
+
+.btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #1565c0;
+}
