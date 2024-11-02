@@ -1,0 +1,44 @@
+/* Estilos globales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e7eff6;
+  color: #555555;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Estilos de la sección hero */
+#inicio {
+    background-color: #fff;
+    min-height: 601px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+.btn:hover {
+    background-color: #1565c0;
+}
