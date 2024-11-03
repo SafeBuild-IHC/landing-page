@@ -180,6 +180,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 0rem 2rem;
 }
 
@@ -243,16 +245,29 @@ footer {
 }
 
 /* Estilos del formulario */
-
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .form-container form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 400px;
+}
+
+.form-container input, textarea {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+.form-container .btn {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #ff6f00;
+}
+
+.form-container .btn:hover {
+    background-color: #da5e00;
 }
 
 @media (max-width: 768px) {
