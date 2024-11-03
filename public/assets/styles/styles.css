@@ -114,7 +114,6 @@ header {
 .text-container {
     text-align: center;
     margin-bottom: 4rem;
-    max-width: 800px;
 }
 
 .text-container h1 {
@@ -180,19 +179,33 @@ footer {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+
+.contact-container .text-container {
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .contact-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0rem;
+}
+
+.phone-mail-container {
     list-style: none;
 }
 
-.contact-container a {
+.phone-mail-container a {
     text-decoration: none;
     color: #555555;
 }
 
-.contact-container li {
+.phone-mail-container li {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -207,6 +220,7 @@ footer {
     flex-direction: row;
     gap: 1rem;
     list-style: none;
+    margin-top: 1rem;
 }
 
 .sub-footer {
