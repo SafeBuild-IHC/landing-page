@@ -76,6 +76,15 @@ header {
     color: #1658ae;
 }
 
+.options .btn {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.options .btn:hover {
+    color: white;
+}
+
 .btn {
     background-color: #1a73e8;
     color: white;
