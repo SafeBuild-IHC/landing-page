@@ -179,12 +179,17 @@ footer {
     min-height: 427px;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
 .contact-container {
     list-style: none;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: #555555;
 }
 
 .contact-container li {
@@ -221,6 +226,19 @@ footer {
 .line {
     background-color: #f3f8fe;
     height: 50px;
+}
+
+/* Estilos del formulario */
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 @media (max-width: 768px) {
