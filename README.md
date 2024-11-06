@@ -1,4 +1,6 @@
-# Información del proyecto
+<h1 style="text-align: center;"> SafeBuild </h1>
+
+## Información del proyecto
 
 - Nombre del proyecto: Landing Page SafeBuild
 - Tecnologías utilizadas: HTML, CSS y JavaScript
@@ -8,7 +10,7 @@
   - Genera informes para implementar medidas preventivas
   - Funciona como sistema proactivo para prevenir incidentes laborales
 
-# Integrantes
+## Integrantes
 
 - Gabriel Aldo Zavala Arteaga (u202311788)
 - Esquirva León Miguel Juan Diego (u202310837)
@@ -16,12 +18,12 @@
 - Miguel Angel Hallasi Saravia (u202312391)
 - Javier Hugo Chumpitazi Maron (u202223487)
 
-# Segmentos objetivos
+## Segmentos objetivos
 
 - Estudiantes de ingeniería civil
 - Expertos en ingeniería civil
 
-# Principales características de la solución
+## Principales características de la solución
 
 - Monitoreo de salud en tiempo real
 - Alertas de riesgo de salud
