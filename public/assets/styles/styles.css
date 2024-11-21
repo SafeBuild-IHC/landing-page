@@ -344,3 +344,79 @@ footer {
         right: 0;
     }
 }
+
+#nosotros {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #1a73e8, #1658ae);
+    color: white;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.about-content p {
+    margin-top: 1.5rem;
+}
+
+#mision-vision {
+    padding: 5rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.mv-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mv-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mv-card:hover {
+    transform: translateY(-5px);
+}
+
+.mv-card h2 {
+    color: #1a73e8;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.mv-card p {
+    line-height: 1.7;
+    color: #555;
+}
+
+.text-container h2 {
+    font-size: 2.2rem;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .mv-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .mv-card {
+        padding: 2rem;
+    }
+    
+    #nosotros, #mision-vision {
+        padding: 3rem 1rem;
+    }
+}
