@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #e7eff6;
@@ -53,7 +57,8 @@ header {
     background-color: #fafafa;
     font-size: 16px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 1.5rem;
     align-items: center;
     height: 100px;
     overflow: hidden;
@@ -62,7 +67,7 @@ header {
 .options {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: clamp(2rem, 2vw, 4rem);
     list-style: none;
 }
 
@@ -103,7 +108,6 @@ header {
 /* Estilos de la sección de servicios */
 #servicios {
     background-color: #e7eff6;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,7 +234,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -286,12 +290,133 @@ footer {
     background-color: #da5e00;
 }
 
-@media (max-width: 768px) {
+#menu-btn {
+    display: none;
+}
+
+@media (max-width: 795px) {
     #inicio p {
         max-width: 300px;
     }
-
     .sub-footer {
         justify-content: center;
+    }
+    .sub-footer .links-container {
+        display: none;
+    }
+    #menu-btn {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    
+    nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+    }
+
+    nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .options {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        right: -250px;
+        background-color: #fafafa;
+        height: 100vh;
+        padding: 2rem;
+        min-width: 250px;
+        transition: right 0.3s ease;
+    }
+
+    nav.visible .options {
+        right: 0;
+    }
+}
+
+#nosotros {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #1a73e8, #1658ae);
+    color: white;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.about-content p {
+    margin-top: 1.5rem;
+}
+
+#mision-vision {
+    padding: 5rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.mv-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mv-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mv-card:hover {
+    transform: translateY(-5px);
+}
+
+.mv-card h2 {
+    color: #1a73e8;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.mv-card p {
+    line-height: 1.7;
+    color: #555;
+}
+
+.text-container h2 {
+    font-size: 2.2rem;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .mv-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .mv-card {
+        padding: 2rem;
+    }
+    
+    #nosotros, #mision-vision {
+        padding: 3rem 1rem;
     }
 }

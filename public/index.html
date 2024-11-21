@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Bienvenido a SafeBuild</title>
-    <link rel="stylesheet" href="public/assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
 <div class="container">
     <header>
         <picture>
           <img
-            src="public/assets/images/logo.png"
-            alt="logo de SafeBuild"
+            src="assets/images/logo.png"
+            alt="Logo de SafeBuild"
             width="135"
             height="135"
           />
         </picture>
         <nav>
           <ul class="options">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="./">Inicio</a></li>
+            <li><a href="./sobre-nosotros.html">Nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#" class="btn">Iniciar sesión</a></li>
+            <li><a href="#contacto" class="btn">Iniciar sesión</a></li>
           </ul>
         </nav>
+        <button id="menu-btn"><img src="assets/images/IconMenuBar.svg" alt="Menu" width="40" height="40"></button>
     </header>
     <main>
         <section id="inicio">
@@ -41,7 +43,7 @@
             <div class="cards-container">
               <article class="card">
                 <img
-                  src="public/assets/images/IconMonitoreo.svg"
+                  src="assets/images/IconMonitoreo.svg"
                   alt="Icono de monitoreo"
                 />
                 <h3>Monitoreo en Tiempo Real</h3>
@@ -52,7 +54,7 @@
               </article>
               <article class="card">
                 <img
-                  src="public/assets/images/IconAlerta.svg"
+                  src="assets/images/IconAlerta.svg"
                   alt="Icono de alerta"
                 />
                 <h3>Alertas Personalizables</h3>
@@ -63,7 +65,7 @@
               </article>
               <article class="card">
                 <img
-                  src="public/assets/images/IconCapacitacion.svg"
+                  src="assets/images/IconCapacitacion.svg"
                   alt="Icono de capacitación"
                 />
                 <h3>Capacitación en Seguridad</h3>
@@ -85,13 +87,13 @@
           </div>
           <ul class="phone-mail-container">
             <li>
-              <img src="public/assets/images/IconPhone.svg" alt="Phone" /><a
+              <img src="assets/images/IconPhone.svg" alt="Phone" /><a
                 href="tel:+51999999999"
                 >+51-999999999</a
               >
             </li>
             <li>
-              <img src="public/assets/images/IconEmail.svg" alt="Mail" /><a
+              <img src="assets/images/IconEmail.svg" alt="Mail" /><a
                 href="mailto:contacto@safebuild.com"
                 >contacto@safebuild.com</a
               >
@@ -103,20 +105,20 @@
               <li>
                 <a href="#"
                   ><img
-                    src="public/assets/images/IconInstagram.svg"
+                    src="assets/images/IconInstagram.svg"
                     alt="Icono de Instagram"
                 /></a>
               </li>
               <li>
                 <a href="#"
                   ><img
-                    src="public/assets/images/IconLinkedin.svg"
+                    src="assets/images/IconLinkedin.svg"
                     alt="Icono de Linkedin"
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="public/assets/images/IconX.svg" alt="Icono de X"
+                  ><img src="assets/images/IconX.svg" alt="Icono de X"
                 /></a>
               </li>
             </ul>
@@ -124,8 +126,8 @@
           </div>
           <div class="form-container">
             <form action="" method="post">
-                <input type="text" placeholder="Ingresa aqui tu nombre">
-                <input type="email" placeholder="Ingresa aqui tu email">
+                <input type="text" name="name" placeholder="Ingresa aqui tu nombre">
+                <input type="email" name="email" placeholder="Ingresa aqui tu email">
                 <textarea name="message" id="message" placeholder="Ingresa aqui tu mensaje"></textarea>
                 <button type="submit" class="btn">Enviar</button>
             </form>
@@ -141,5 +143,5 @@
     </footer>
 </div>
 </body>
-<script src="public/assets/scripts/main.js" ></script>
+<script src="assets/scripts/main.js" ></script>
 </html>
