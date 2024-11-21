@@ -419,4 +419,8 @@ footer {
     #nosotros, #mision-vision {
         padding: 3rem 1rem;
     }
+
+    .form-container form {
+        width: 300px;
+    }
 }
