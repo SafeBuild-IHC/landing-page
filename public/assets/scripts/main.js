@@ -1,4 +1,14 @@
 $form = document.querySelector("form");
+$menuBtn = document.querySelector("#menu-btn");
+$nav = document.querySelector("nav");
+
+$menuBtn.addEventListener("click", () => {
+    $nav.classList.add("visible");
+});
+
+$nav.addEventListener("click", () => {
+    $nav.classList.remove("visible");
+});
 
 $form.addEventListener("submit", (e) => {
     e.preventDefault();
